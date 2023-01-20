@@ -1,0 +1,108 @@
+.header {
+    background: url(../img/header__bg.png) no-repeat top center/cover;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    &__title {
+        max-width: 75%;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    &__nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__button {
+        box-sizing: border-box;
+        font-size: 13px;
+        line-height: 16px;
+        width: 183px;
+        height: 43px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        background-color: #fff;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: #ffffffd5;
+            border: 1px solid $blue2;
+            color: $blue2;
+        }
+
+        &:active {
+            background-color: $blue;
+            border: 1px solid $blue;
+            color: #fff;
+        }
+
+        &--blue {
+            border: 1px solid #ffffff;
+            background-color: $blue;
+            color: #fff;
+
+            &:hover {
+                background-color: $blue2;
+                border: 1px solid $blue2;
+                color: #fff;
+            }
+
+            &:active {
+                background-color: $darkblue;
+                border: 1px solid $blue;
+            }
+        }
+    }
+}
+
+.header-title {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &__accent {
+        color: $blue;
+    }
+}
+
+.header-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 20px;
+    list-style: none;
+
+    &__item {
+        font-size: 20px;
+        line-height: 24px;
+
+        &::before {
+            content: "-";
+            position: relative;
+            left: -5px;
+        }
+    }
+}

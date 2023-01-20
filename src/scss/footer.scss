@@ -1,0 +1,64 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    background-color: $grey;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__payments {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-left: 1px solid $footergrey;
+        border-right: 1px solid $footergrey;
+        gap: 20px;
+        padding: 0 40px;
+    }
+
+    &__payment {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+    }
+
+    &__text {
+        font-size: 13px;
+        line-height: 16px;
+        color: $footergrey;
+    }
+
+    &__icon {
+        width: 15px;
+        height: 15px;
+    }
+
+    .footer-label {
+        &__text {
+            color: #fff;
+            &--up {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .footer-link {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+
+        &__text {
+            color: #fff;
+
+            &:hover {
+                color: $blue;
+                transition: color 0.2s linear;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 1172px;
+    width: 80vw;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+}
